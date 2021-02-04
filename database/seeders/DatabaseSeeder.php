@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Moderador;
+use App\Models\Rol;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\DB;
@@ -16,7 +16,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        Moderador::factory(5)->create();
+        Rol::factory(5)->create();
         //DB::table('users')->delete();
         //$this->call(AnimalSeeder::class);
 

@@ -2,18 +2,17 @@
 
 namespace Database\Factories;
 
-use App\Models\Moderador;
+use App\Models\Rol;
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Illuminate\Support\Str;
 
-class ModeradorFactory extends Factory
+class RolFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Moderador::class;
+    protected $model = Rol::class;
 
     /**
      * Define the model's default state.
@@ -24,7 +23,7 @@ class ModeradorFactory extends Factory
     {
         $nombre = $this->faker->name;
         return [
-            'nombre_usuario' => $nombre
+            'nombre_rol' => $nombre
         ];
     }
 }

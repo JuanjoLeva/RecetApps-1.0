@@ -2,7 +2,7 @@
 
 namespace Database\Seeders;
 
-use App\Models\Moderador;
+use App\Models\Rol;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -32,12 +32,12 @@ class UsersSeeder extends Seeder
         $u->save();
         $u2->save();
 
-        $u->moderadores()->attach([
-            Moderador::all()->random()->id
+        $u->roles()->attach([
+            Rol::all()->random()->id
         ]);
 
-        $u2->moderadores()->attach([
-            Moderador::all()->random()->id
+        $u2->roles()->attach([
+            Rol::all()->random()->id
         ]);
 
         $this->command->info("Se han añadido dos usuarios predeterminados y 5 aleatorios");

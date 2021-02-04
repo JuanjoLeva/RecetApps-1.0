@@ -64,7 +64,7 @@ class User extends Authenticatable
         return $this->hasMany(Receta::class);
     }
 
-    public function moderadores()
+    public function roles()
     {
         return $this->belongsToMany(Moderador::class);
     }
