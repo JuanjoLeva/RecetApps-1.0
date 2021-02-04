@@ -5,5 +5,5 @@ Que talghmgmghmg
 @endsection
 
 @section("contenido")
-    index
+    hola qur ta
 @endsection
