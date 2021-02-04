@@ -5,5 +5,5 @@
 @endsection
 
 @section("contenido")
-    create
+prueba
 @endsection
